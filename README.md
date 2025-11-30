@@ -1,2 +1,2 @@
-# tartanhacks-landing-2025
-Landing Page for TartanHacks 2025
+# TartanHacks Landing Page 2026
+Landing Page for TartanHacks for February 2026
