@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'PPRader';
+    src: url('fonts/PPRader-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PPRader';
+    src: url('fonts/PPRader-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PPRader';
+    src: url('fonts/PPRader-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PPRader';
+    src: url('fonts/PPRader-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PPRader';
+    src: url('fonts/PPRader-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PPRader';
+    src: url('fonts/PPRader-ThinItalic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F4F2F3;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.register-link {
+    position: absolute;
+    left: 50%;
+    top: 49.5vw;
+    transform: translate(-50%, -50%);
+}
+
+.register-link:hover {
+    cursor: pointer;
+}
+
+.register-link img {
+    width: 15vw;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    margin-left: 16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-left: auto;
+    padding: 0 65px;
+    gap: 72px;
+}
+
+
+.header-nav-link {
+    color: #000;
+    font-family: "PPRader", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    text-decoration: #00000000 underline;
+    transition: all 1s ease-in-out;
+
+    padding: 31px 0 0 0;
+}
+
+.header-nav-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header-logo_link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-nav-link {
+    width: 39px;
+    height: 48px;
+    vertical-align: middle;
+}
