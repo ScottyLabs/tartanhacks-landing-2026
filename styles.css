@@ -75,12 +75,16 @@ img {
 }
 
 header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     background: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(10px);
     width: 100vw;
-    margin-left: 16px;
+    top: 0; 
+    left: 0;
+    padding-left: 16px;
+    z-index: 100;
 }
 
 nav {
@@ -122,4 +126,18 @@ nav {
     width: 39px;
     height: 48px;
     vertical-align: middle;
+}
+
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./imgs/hero-background.png');
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    padding-top: 80px;
+    text-align: center;
 }
