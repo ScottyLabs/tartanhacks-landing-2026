@@ -58,20 +58,12 @@ img {
     display: block;
 }
 
-.register-link {
-    position: absolute;
-    left: 50%;
-    top: 49.5vw;
-    transform: translate(-50%, -50%);
-}
-
 .register-link:hover {
     cursor: pointer;
 }
 
 .register-link img {
     width: 15vw;
-    height: auto;
 }
 
 header {
@@ -80,7 +72,7 @@ header {
     flex-direction: row;
     background: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(10px);
-    width: 100vw;
+    width: 100%;
     top: 0; 
     left: 0;
     padding-left: 16px;
@@ -130,14 +122,122 @@ nav {
 
 .hero-section {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('./imgs/hero-background.png');
-    object-fit: cover;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-content {
-    position: absolute;
-    padding-top: 80px;
+    height: 100vh;
+    width: 100%;
+    position: inherit;
+    z-index: 10;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background: url("./imgs/hero-background.png") lightgray 50% / cover no-repeat;
+    backdrop-filter: blur(1px);
+}
+
+.hero-title {
+    width: 50vw;
+    background: transparent;
+}
+
+.hero-subtitle {
+    color: #000;
+    font-family: "PPRader";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero-transition {
+    position: absolute;
+    top: calc(100vh - 100px);
+    z-index: 20;
+    height: 200px;
+    width: 100%;
+    background: #F4F2F3;
+    filter: blur(50px);
+}
+.hero-transition-spacer {
+    height: 100px;
+}
+
+.inline-scottydog {
+    display: flex;
+    width: 38px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-description {
+    color: #000;
+    text-align: center;
+    font-family: "Spline Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 141.667% */
+    
+    width: calc(max(25vw, 500px));
+}
+
+.hero-description-text {
+    color: #000;
+    font-family: "PPRader", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.section-divider {
+    width: 80%;
+    border: none;
+    border-top: 1px solid #C4C4C4;
+    margin: 40px auto;
+}
+
+.theme-section {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.theme-title {
+    color: #000;
+    font-family: "PPRader", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.theme-description {
+    color: #000;
+    font-family: "PPRader", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 800px;
 }
