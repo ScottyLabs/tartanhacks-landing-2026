@@ -1,156 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TartanHacks 2026" />
-    <meta
-      name="keywords"
-      content="TartanHacks, CMU, Carnegie Mellon University, Hackathon, CMU Hackathon, Hackathon 2026"
-    />
-    <title>TartanHacks 2026</title>
-    <link rel="icon" href="./imgs/TH26_favicon.png" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script>
-      document.addEventListener('mousemove', (e) => {
-          // Update CSS variables with the current mouse coordinates
-          document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
-          document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
-      });
-      document.body.style.cursor = 'none';
-    </script>
-  </head>
 
-  <body>
-    <div class="cursor-effect"></div>
-    <!-- Decorative tiles -->
-    <div class="tiles-container" aria-hidden="true">
-      <img src="./imgs/tiles/tile_0.png" alt="" class="tile tile-0" />
-      <img src="./imgs/tiles/tile_1.png" alt="" class="tile tile-1" />
-      <div class="tile-cluster-0">
-        <img src="./imgs/tiles/tile_2.png" alt="" class="tile tile-2" />
-        <img src="./imgs/tiles/tile_3.png" alt="" class="tile tile-3" />
-      </div>
-      <div class="tile-cluster-1">
-        <img src="./imgs/tiles/tile_4.png" alt="" class="tile tile-4" />
-        <img src="./imgs/tiles/tile_5.png" alt="" class="tile tile-5" />
-      </div>
-      <img src="./imgs/tiles/tile_6.png" alt="" class="tile tile-6" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TartanHacks 2026" />
+  <meta name="keywords"
+    content="TartanHacks, CMU, Carnegie Mellon University, Hackathon, CMU Hackathon, Hackathon 2026" />
+  <title>TartanHacks 2026</title>
+  <link rel="icon" href="./imgs/TH26_favicon.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script>
+    document.addEventListener('mousemove', (e) => {
+      // Update CSS variables with the current mouse coordinates
+      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+    });
 
-      <img src="./imgs/tiles/tile_7.png" alt="" class="tile tile-7" />
-      <div class="tile-cluster-2">
-        <img src="./imgs/tiles/tile_8.png" alt="" class="tile tile-8" />
-        <img src="./imgs/tiles/tile_9.png" alt="" class="tile tile-9" />
-      </div>
-      <div class="tile-cluster-3">
-        <img src="./imgs/tiles/tile_10.png" alt="" class="tile tile-10" />
-        <img src="./imgs/tiles/tile_11.png" alt="" class="tile tile-11" />
-        <img src="./imgs/tiles/tile_12.png" alt="" class="tile tile-12" />
-      </div>
+  </script>
+</head>
+
+<body>
+  <div class="cursor-effect"></div>
+  <!-- Decorative tiles -->
+  <div class="tiles-container" aria-hidden="true">
+    <img src="./imgs/tiles/tile_0.png" alt="" class="tile tile-0" />
+    <img src="./imgs/tiles/tile_1.png" alt="" class="tile tile-1" />
+    <div class="tile-cluster-0">
+      <img src="./imgs/tiles/tile_2.png" alt="" class="tile tile-2" />
+      <img src="./imgs/tiles/tile_3.png" alt="" class="tile tile-3" />
     </div>
-    <header>
-      <a href="#" class="header-logo_link">
-        <img
-          src="./imgs/TH26.svg"
-          alt="TartanHacks 2026 Logo"
-          class="header-nav-logo"
-        />
-      </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span class="nav-toggle-bar"></span>
-      </button>
-      <nav>
-        <!-- TODO: Hamburger when small screen / mobile -->
-        <a href="#home" class="header-nav-link">Home</a>
-        <a href="#schedule" class="header-nav-link">Schedule</a>
-        <a href="#speakers" class="header-nav-link">Speakers</a>
-        <a href="#sponsors" class="header-nav-link">Sponsors</a>
-        <!-- <a href="#faqs" class="header-nav-link">FAQs</a> -->
-      </nav>
-    </header>
-    <main>
-      <section id="home" class="hero-section">
-        <div class="hero-content">
-          <div class="hero-title">
-            <img src="./imgs/title-text.png" alt="TartanHacks 2026" class="hero-title" />
-            <p class="hero-subtitle">Presented by ScottyLabs <img src="./imgs/scottylabs-logo.png" alt="ScottyLabs Logo" class="inline-scottydog" /></p>
+    <div class="tile-cluster-1">
+      <img src="./imgs/tiles/tile_4.png" alt="" class="tile tile-4" />
+      <img src="./imgs/tiles/tile_5.png" alt="" class="tile tile-5" />
+    </div>
+    <img src="./imgs/tiles/tile_6.png" alt="" class="tile tile-6" />
+
+    <img src="./imgs/tiles/tile_7.png" alt="" class="tile tile-7" />
+    <div class="tile-cluster-2">
+      <img src="./imgs/tiles/tile_8.png" alt="" class="tile tile-8" />
+      <img src="./imgs/tiles/tile_9.png" alt="" class="tile tile-9" />
+    </div>
+    <div class="tile-cluster-3">
+      <img src="./imgs/tiles/tile_10.png" alt="" class="tile tile-10" />
+      <img src="./imgs/tiles/tile_11.png" alt="" class="tile tile-11" />
+      <img src="./imgs/tiles/tile_12.png" alt="" class="tile tile-12" />
+    </div>
+  </div>
+  <header>
+    <a href="#" class="header-logo_link">
+      <img src="./imgs/TH26.svg" alt="TartanHacks 2026 Logo" class="header-nav-logo" />
+    </a>
+    <nav>
+      <a href="#home" class="header-nav-link">Home</a>
+      <a href="#schedule" class="header-nav-link">Schedule</a>
+      <a href="#speakers" class="header-nav-link">Speakers</a>
+      <a href="#sponsors" class="header-nav-link">Sponsors</a>
+      <!-- <a href="#faqs" class="header-nav-link">FAQs</a> -->
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-title">
+          <img src="./imgs/title-text.png" alt="TartanHacks 2026" class="hero-title glassy" />
+          <p class="hero-subtitle">Presented by ScottyLabs <img src="./imgs/scottylabs-logo.png" alt="ScottyLabs Logo"
+              class="inline-scottydog" /></p>
+        </div>
+        <a href="#" class="register-link">
+          <img src="./imgs/register-button.png" alt="Register Now" class="register-button" />
+        </a>
+      </div>
+      <div class="hero-transition"></div>
+      <div class="hero-transition-spacer"></div>
+      <div class="hero-description">
+        <p class="hero-description-text">
+          TARTANHACKS is the largest Hackathon in Pittsburgh! Organized by ScottyLabs, it's a 24-hour hackathon where
+          participants from all over the country create innovative projects. Come on over to hack, learn from our
+          workshops and incredible speakers, and meet other hackers.
+        </p>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section class="theme-section">
+      <div class="theme-head">
+        <h2 class="theme-intro">This year's theme is...</h2>
+        <p class="section-title">
+          MOSAIC
+        </p>
+      </div>
+      <div class="theme-description">
+        <p>For 24 hours, step into a world built from fragments,<br>floating tiles, ideas that refract and snap into
+          place.</p>
+        <p>Nothing arrives whole; everything begins as a piece. You and your team gather scattered bits of vision,
+          skill, and code, assembling them into something greater than any single part. Every insight becomes a tile and
+          every teammate a new color. As the hours pass, the picture will sharpen, a Mosaic taking shape.</p>
+        <p class="theme-tagline"><strong>Enter with fragments.<br>Leave with something whole.</strong></p>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="schedule" class="schedule-section">
+      <h2 class="section-title">SCHEDULE</h2>
+      <p class="section-description">To be announced!</p>
+    </section>
+    <hr class="section-divider" />
+    <section id="speakers" class="speakers-section">
+      <h2 class="section-title">SPEAKERS</h2>
+      <p class="section-description">To be announced!</p>
+    </section>
+    <hr class="section-divider" />
+    <section class="prizes-section">
+      <h2 class="section-title">PRIZES</h2>
+      <p class="section-description">To be announced!</p>
+    </section>
+    <hr class="section-divider" />
+    <section id="sponsors" class="sponsors-section">
+      <h2 class="section-title">SPONSORS</h2>
+      <div class="sponsors-list">
+        <div class="sponsors-premier">
+          <div class="premier-badge">Premier</div>
+          <div class="premier-logos glassy">
+            <a href="https://coderabbit.ai/" target="_blank"><img src="./imgs/sponsors/coderabbit.png"
+                alt="CodeRabbit"></a>
+            <a href="https://www.visa.com/" target="_blank"><img src="./imgs/sponsors/visa.png" alt="Visa"></a>
+            <a href="https://ripple.com/" target="_blank"><img src="./imgs/sponsors/ripple.png" alt="Ripple"></a>
+            <a href="https://www.conway.com/" target="_blank"><img src="./imgs/sponsors/conway.png" alt="Conway"></a>
+            <a href="https://dedalus.com/" target="_blank"><img src="./imgs/sponsors/deadalus.png"
+                alt="Dedalus Labs"></a>
           </div>
-          <a href="#" class="register-link">
-            <img src="./imgs/register-button.png" alt="Register Now" class="register-button" /> 
-          </a>
         </div>
-        <div class="hero-transition"></div>
-        <div class="hero-transition-spacer"></div>
-        <div class="hero-description">
-          <p class="hero-description-text">
-            TARTANHACKS is the largest Hackathon in Pittsburgh! Organized by ScottyLabs, it's a 24-hour hackathon where participants from all over the country create innovative projects. Come on over to hack, learn from our workshops and incredible speakers, and meet other hackers.
-          </p>
+
+        <div class="sponsors-grid glassy">
+          <a href="https://www.accenture.com/" target="_blank"><img src="./imgs/sponsors/accenture.png"
+              alt="Accenture"></a>
+          <a href="https://www.agentuity.com/" target="_blank"><img src="./imgs/sponsors/agentuity.png"
+              alt="Agentuity"></a>
+          <a href="https://www.citadel.com/" target="_blank"><img src="./imgs/sponsors/citadel.png" alt="Citadel"></a>
+          <a href="https://www.deshaw.com/" target="_blank"><img src="./imgs/sponsors/deshaw.png"
+              alt="DE Shaw & Co"></a>
+          <a href="https://fly.io/" target="_blank"><img src="./imgs/sponsors/fly.png" alt="Fly.io"></a>
+          <a href="https://www.hudsonrivertrading.com/" target="_blank"><img src="./imgs/sponsors/hrt.png"
+              alt="HRT"></a>
+
+          <a href="https://modal.com/" target="_blank"><img src="./imgs/sponsors/modal.png" alt="Modal"></a>
+          <a href="https://www.optiver.com/" target="_blank"><img src="./imgs/sponsors/logo.png" alt="Optiver"></a>
+          <a href="https://scale.com/" target="_blank"><img src="./imgs/sponsors/scale.png" alt="Scale"></a>
+          <a href="https://www.sandia.gov/" target="_blank"><img src="./imgs/sponsors/sandia.png"
+              alt="Sandia National Laboratories"></a>
+          <a href="https://decagon.ai/" target="_blank"><img src="./imgs/sponsors/decagon.png" alt="Decagon"></a>
+          <a href="https://www.balyasny.com/" target="_blank"><img src="./imgs/sponsors/balyasny.png"
+              alt="Balyasny"></a>
+
+          <a href="https://www.janestreet.com/" target="_blank"><img src="./imgs/sponsors/janestreet.png"
+              alt="Jane Street"></a>
         </div>
-      </section>
-      <hr class="section-divider" />
-      <section class="theme-section">
-        <div class="theme-head">
-          <h2 class="theme-intro">This year's theme is...</h2>
-          <p class="section-title">
-            MOSAIC
-          </p>
-        </div>
-        <div class="theme-description">
-          <p>For 24 hours, step into a world built from fragments,<br>floating tiles, ideas that refract and snap into place.</p>
-          <p>Nothing arrives whole; everything begins as a piece. You and your team gather scattered bits of vision, skill, and code, assembling them into something greater than any single part. Every insight becomes a tile and every teammate a new color. As the hours pass, the picture will sharpen, a Mosaic taking shape.</p>
-          <p class="theme-tagline"><strong>Enter with fragments.<br>Leave with something whole.</strong></p>
-        </div>
-      </section>
-      <hr class="section-divider" />
-      <section id="schedule" class="schedule-section">
-        <h2 class="section-title">SCHEDULE</h2>
-        <p class="section-description">To be announced!</p>
-      </section>
-      <hr class="section-divider" />
-      <section id="speakers" class="speakers-section">
-        <h2 class="section-title">SPEAKERS</h2>
-        <p class="section-description">To be announced!</p>
-      </section>
-      <hr class="section-divider" />
-      <section class="prizes-section">
-        <h2 class="section-title">PRIZES</h2>
-        <p class="section-description">To be announced!</p>
-      </section>
-      <hr class="section-divider" />
-      <section id="sponsors" class="sponsors-section">
-        <h2 class="section-title">SPONSORS</h2>
-        <p class="section-description">To be announced!</p>
-      </section>
-    </main>
-    <script>
-      (function () {
-        const btn = document.querySelector('.nav-toggle');
-        const nav = document.querySelector('nav');
-        if (!btn || !nav) return;
+      </div>
+    </section>
+  </main>
 
-        function closeNav() {
-          nav.classList.remove('nav--open');
-          document.body.classList.remove('nav-open');
-          btn.setAttribute('aria-expanded', 'false');
-          btn.classList.remove('open');
-        }
+</body>
 
-        btn.addEventListener('click', () => {
-          const open = nav.classList.toggle('nav--open');
-          document.body.classList.toggle('nav-open', open);
-          btn.setAttribute('aria-expanded', open);
-          btn.classList.toggle('open', open);
-        });
-
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape') closeNav();
-        });
-
-        document.querySelectorAll('nav a').forEach((a) =>
-          a.addEventListener('click', () => closeNav())
-        );
-      })();
-    </script>
-    
-  </body>
 </html>
