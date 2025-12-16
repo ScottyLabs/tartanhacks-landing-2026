@@ -197,12 +197,14 @@ main {
 }
 
 .hero-subtitle {
+    position: relative;
     color: #000;
     font-family: "PPRader";
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    bottom: 100%;
 
     display: inline-flex;
     align-items: center;
