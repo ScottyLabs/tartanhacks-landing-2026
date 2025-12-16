@@ -999,8 +999,6 @@ main {
 .sponsors-grid {
     position: relative;
 
-    border-radius: 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1008,8 +1006,16 @@ main {
     gap: 40px 60px;
     width: 100%;
     padding: 20px 20px;
-    background: transparent;
-    /* Added padding for the box look */
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-family: "Spline Sans", sans-serif;
+    font-size: 16px;
+    color: #3D2C35;
+    font-weight: 500;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .sponsors-grid a {
