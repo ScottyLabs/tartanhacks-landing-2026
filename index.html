@@ -11,9 +11,43 @@
     <title>TartanHacks 2026</title>
     <link rel="icon" href="./imgs/TH26_favicon.png" />
     <link rel="stylesheet" href="./styles.css" />
+    <script>
+      document.addEventListener('mousemove', (e) => {
+          // Update CSS variables with the current mouse coordinates
+          document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+          document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+      });
+      document.body.style.cursor = 'none';
+    </script>
   </head>
 
   <body>
+    <div class="cursor-effect"></div>
+    <!-- Decorative tiles -->
+    <div class="tiles-container" aria-hidden="true">
+      <img src="./imgs/tiles/tile_0.png" alt="" class="tile tile-0" />
+      <img src="./imgs/tiles/tile_1.png" alt="" class="tile tile-1" />
+      <div class="tile-cluster-0">
+        <img src="./imgs/tiles/tile_2.png" alt="" class="tile tile-2" />
+        <img src="./imgs/tiles/tile_3.png" alt="" class="tile tile-3" />
+      </div>
+      <div class="tile-cluster-1">
+        <img src="./imgs/tiles/tile_4.png" alt="" class="tile tile-4" />
+        <img src="./imgs/tiles/tile_5.png" alt="" class="tile tile-5" />
+      </div>
+      <img src="./imgs/tiles/tile_6.png" alt="" class="tile tile-6" />
+
+      <img src="./imgs/tiles/tile_7.png" alt="" class="tile tile-7" />
+      <div class="tile-cluster-2">
+        <img src="./imgs/tiles/tile_8.png" alt="" class="tile tile-8" />
+        <img src="./imgs/tiles/tile_9.png" alt="" class="tile tile-9" />
+      </div>
+      <div class="tile-cluster-3">
+        <img src="./imgs/tiles/tile_10.png" alt="" class="tile tile-10" />
+        <img src="./imgs/tiles/tile_11.png" alt="" class="tile tile-11" />
+        <img src="./imgs/tiles/tile_12.png" alt="" class="tile tile-12" />
+      </div>
+    </div>
     <header>
       <a href="#" class="header-logo_link">
         <img
@@ -22,17 +56,20 @@
           class="header-nav-logo"
         />
       </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+      </button>
       <nav>
         <!-- TODO: Hamburger when small screen / mobile -->
-        <a href="#" class="header-nav-link">Home</a>
-        <a href="#" class="header-nav-link">Schedule</a>
-        <a href="#" class="header-nav-link">Speakers</a>
-        <a href="#" class="header-nav-link">Sponsors</a>
-        <a href="#" class="header-nav-link">FAQs</a>
+        <a href="#home" class="header-nav-link">Home</a>
+        <a href="#schedule" class="header-nav-link">Schedule</a>
+        <a href="#speakers" class="header-nav-link">Speakers</a>
+        <a href="#sponsors" class="header-nav-link">Sponsors</a>
+        <!-- <a href="#faqs" class="header-nav-link">FAQs</a> -->
       </nav>
     </header>
     <main>
-      <section class="hero-section">
+      <section id="home" class="hero-section">
         <div class="hero-content">
           <div class="hero-title">
             <img src="./imgs/title-text.png" alt="TartanHacks 2026" class="hero-title" />
@@ -53,32 +90,67 @@
       <hr class="section-divider" />
       <section class="theme-section">
         <div class="theme-head">
-          <h2 class="theme-title">This year's theme is...</h2>
-          <p class="theme-description">
+          <h2 class="theme-intro">This year's theme is...</h2>
+          <p class="section-title">
             MOSAIC
           </p>
         </div>
         <div class="theme-description">
-          <p>For 24 hours, step into a world built from fragments,floating tiles, ideas that refract and snap into place.</p>
-          <p>Nothing arrives whole; everything begins as a piece. You and your team gather scattered bits of vision, skill, and code, assembling them into something greater than any single part. Every insight becomes a tile and every teammate a new color.  As the hours pass, the picture will sharpen, a Mosaic taking shape.</p>
-
-          <p>Enter with fragments. </p>
-          <p>Leave with something whole.</p>
-
+          <p>For 24 hours, step into a world built from fragments,<br>floating tiles, ideas that refract and snap into place.</p>
+          <p>Nothing arrives whole; everything begins as a piece. You and your team gather scattered bits of vision, skill, and code, assembling them into something greater than any single part. Every insight becomes a tile and every teammate a new color. As the hours pass, the picture will sharpen, a Mosaic taking shape.</p>
+          <p class="theme-tagline"><strong>Enter with fragments.<br>Leave with something whole.</strong></p>
         </div>
       </section>
-      <section class="schedule-section">
-        <h2 class="section-title">Schedule</h2>
-        <p class="section-description">Stay tuned for the full schedule!</p>
+      <hr class="section-divider" />
+      <section id="schedule" class="schedule-section">
+        <h2 class="section-title">SCHEDULE</h2>
+        <p class="section-description">To be announced!</p>
       </section>
-      <section class="speakers-section">
-        <h2 class="section-title">Speakers</h2>
-        <p class="section-description">Stay tuned for our amazing speaker lineup!</p>
+      <hr class="section-divider" />
+      <section id="speakers" class="speakers-section">
+        <h2 class="section-title">SPEAKERS</h2>
+        <p class="section-description">To be announced!</p>
       </section>
-      <section class="sponsors-section">
-        <h2 class="section-title">Sponsors</h2>
-        <p class="section-description">TODO</p>
+      <hr class="section-divider" />
+      <section class="prizes-section">
+        <h2 class="section-title">PRIZES</h2>
+        <p class="section-description">To be announced!</p>
+      </section>
+      <hr class="section-divider" />
+      <section id="sponsors" class="sponsors-section">
+        <h2 class="section-title">SPONSORS</h2>
+        <p class="section-description">To be announced!</p>
       </section>
     </main>
+    <script>
+      (function () {
+        const btn = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('nav');
+        if (!btn || !nav) return;
+
+        function closeNav() {
+          nav.classList.remove('nav--open');
+          document.body.classList.remove('nav-open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.classList.remove('open');
+        }
+
+        btn.addEventListener('click', () => {
+          const open = nav.classList.toggle('nav--open');
+          document.body.classList.toggle('nav-open', open);
+          btn.setAttribute('aria-expanded', open);
+          btn.classList.toggle('open', open);
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') closeNav();
+        });
+
+        document.querySelectorAll('nav a').forEach((a) =>
+          a.addEventListener('click', () => closeNav())
+        );
+      })();
+    </script>
+    
   </body>
 </html>
