@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="./styles.css" />
   <script>
     document.addEventListener('mousemove', (e) => {
+      // if is useragent mobile, do not update mouse coordinates
+      if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
+        return;
+      }
       // Update CSS variables with the current mouse coordinates
       document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
       document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
@@ -67,7 +71,7 @@
           <p class="hero-subtitle">Presented by ScottyLabs <img src="./imgs/scottylabs-logo.png" alt="ScottyLabs Logo"
               class="inline-scottydog" /></p>
         </div>
-        <a href="#" class="register-link">
+        <a href="https://register.tartanhacks.com" class="register-link">
           <img src="./imgs/register-button.png" alt="Register Now" class="register-button" />
         </a>
       </div>
