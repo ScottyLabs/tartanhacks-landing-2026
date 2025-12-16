@@ -183,28 +183,39 @@ main {
 }
 
 .hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title-container {
+    position: relative;
+    display: inline-block;
     width: clamp(280px, 40vw, 900px);
-    background: transparent;
+}
+
+.hero-title-img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero-title-overlay {
-    position: relative;
+    position: absolute;
+    top: -50vh;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 50vh);
     z-index: 100;
-    width: clamp(280px, 40vw, 900px);
-    height: 100%;
-    bottom: 100%;
-    left: calc(50% - clamp(280px, 40vw, 900px) / 2);
 }
 
 .hero-subtitle {
-    position: relative;
     color: #000;
     font-family: "PPRader";
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    bottom: 100%;
 
     display: inline-flex;
     align-items: center;
@@ -552,7 +563,7 @@ main {
         font-size: 18px;
     }
 
-    .hero-title {
+    .hero-title-container {
         width: 65vw;
     }
 
@@ -702,7 +713,7 @@ main {
         padding: 0 20px;
     }
 
-    .hero-title {
+    .hero-title-container {
         width: 90vw;
     }
 
