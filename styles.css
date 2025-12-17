@@ -176,7 +176,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 
     background: url("./imgs/hero-background.png") lightgray 50% / cover no-repeat;
     backdrop-filter: blur(1px);
@@ -202,10 +201,10 @@ main {
 
 .hero-title-overlay {
     position: absolute;
-    top: -50vh;
+    top: -20vh;
     left: 0;
     width: 100%;
-    height: calc(100% + 50vh);
+    height: calc(100% + 20vh);
     z-index: 100;
 }
 
@@ -224,16 +223,16 @@ main {
 
 .hero-transition {
     position: absolute;
-    top: calc(100vh - 100px);
     z-index: 20;
-    height: 200px;
+    height: 20vh;
     width: 100%;
     background: #F4F2F3;
     filter: blur(50px);
+    top: 90vh;
 }
 
 .hero-transition-spacer {
-    height: 200px;
+    height: 20vh;
 }
 
 .inline-scottydog {
@@ -551,6 +550,20 @@ main {
 /* ========================================
    RESPONSIVE STYLES
    ======================================== */
+
+/* Short display styles (height < 750px) */
+@media (max-height: 750px) {
+    .hero-transition {
+        position: absolute;
+        z-index: 20;
+        height: 50px;
+        width: 100%;
+        background: #F4F2F3;
+        filter: blur(15px);
+        top: calc(100vh - 50px / 2);
+    }
+
+}
 
 /* Tablet styles (768px - 1024px) */
 @media (max-width: 1024px) {
