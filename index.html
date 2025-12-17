@@ -9,19 +9,8 @@
     content="TartanHacks, CMU, Carnegie Mellon University, Hackathon, CMU Hackathon, Hackathon 2026" />
   <title>TartanHacks 2026</title>
   <link rel="icon" href="./imgs/TH26_favicon.png" />
-  <link rel="stylesheet" href="./styles.css" />
-  <script>
-    window.onload = () => {
-      if (!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
-        document.addEventListener('mousemove', (e) => {
-          // if is useragent mobile, do not update mouse coordinates
-          // Update CSS variables with the current mouse coordinates
-          document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
-          document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
-        });
-      }
-    } 
-  </script>
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="./js/cursor.js"></script>
 </head>
 
 <body>
