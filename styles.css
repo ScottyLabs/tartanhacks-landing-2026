@@ -264,13 +264,17 @@ main {
     font-weight: 400;
     line-height: 34px;
     /* 141.667% */
+    position: relative;
+    z-index: 100;
 }
 
 .section-divider {
+    position: relative;
     width: 80%;
     border: none;
     border-top: 1px solid #C4C4C4;
     margin: 100px auto;
+    z-index: 0;
 }
 
 .theme-section {
@@ -288,6 +292,8 @@ main {
     font-weight: 700;
     line-height: normal;
     text-align: center;
+    position: relative;
+    z-index: 100;
 }
 
 .theme-intro {
@@ -298,6 +304,8 @@ main {
     font-weight: 400;
     line-height: 0;
     text-align: center;
+    position: relative;
+    z-index: 100;
 }
 
 .section-title {
@@ -308,6 +316,8 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 1;
+    position: relative;
+    z-index: 100;
 }
 
 .theme-description {
@@ -321,6 +331,8 @@ main {
     max-width: 850px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
+    z-index: 100;
 }
 
 .theme-description p {
@@ -347,6 +359,8 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 34px;
+    position: relative;
+    z-index: 100;
 }
 
 .schedule-section,
@@ -372,6 +386,7 @@ main {
 
 .tile {
     position: absolute;
+    z-index: 10;
     pointer-events: none;
 }
 

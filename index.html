@@ -11,46 +11,21 @@
   <link rel="icon" href="./imgs/TH26_favicon.png" />
   <link rel="stylesheet" href="./styles.css" />
   <script>
-    document.addEventListener('mousemove', (e) => {
-      // if is useragent mobile, do not update mouse coordinates
-      if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
-        return;
+    document.onload = () => {
+      if (!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
+        document.addEventListener('mousemove', (e) => {
+          // if is useragent mobile, do not update mouse coordinates
+          // Update CSS variables with the current mouse coordinates
+          document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+          document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+        });
       }
-      // Update CSS variables with the current mouse coordinates
-      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
-      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
-    });
-
+    } 
   </script>
 </head>
 
 <body>
   <div class="cursor-effect"></div>
-  <!-- Decorative tiles -->
-  <div class="tiles-container" aria-hidden="true">
-    <img src="./imgs/tiles/tile_0.png" alt="" class="tile tile-0" />
-    <img src="./imgs/tiles/tile_1.png" alt="" class="tile tile-1" />
-    <div class="tile-cluster-0">
-      <img src="./imgs/tiles/tile_2.png" alt="" class="tile tile-2" />
-      <img src="./imgs/tiles/tile_3.png" alt="" class="tile tile-3" />
-    </div>
-    <div class="tile-cluster-1">
-      <img src="./imgs/tiles/tile_4.png" alt="" class="tile tile-4" />
-      <img src="./imgs/tiles/tile_5.png" alt="" class="tile tile-5" />
-    </div>
-    <img src="./imgs/tiles/tile_6.png" alt="" class="tile tile-6" />
-
-    <img src="./imgs/tiles/tile_7.png" alt="" class="tile tile-7" />
-    <div class="tile-cluster-2">
-      <img src="./imgs/tiles/tile_8.png" alt="" class="tile tile-8" />
-      <img src="./imgs/tiles/tile_9.png" alt="" class="tile tile-9" />
-    </div>
-    <div class="tile-cluster-3">
-      <img src="./imgs/tiles/tile_10.png" alt="" class="tile tile-10" />
-      <img src="./imgs/tiles/tile_11.png" alt="" class="tile tile-11" />
-      <img src="./imgs/tiles/tile_12.png" alt="" class="tile tile-12" />
-    </div>
-  </div>
   <header>
     <a href="#" class="header-logo_link">
       <img src="./imgs/TH26.svg" alt="TartanHacks 2026 Logo" class="header-nav-logo" />
@@ -163,6 +138,31 @@
         </div>
       </div>
     </section>
+    <!-- Decorative tiles -->
+    <div class="tiles-container" aria-hidden="true">
+      <img src="./imgs/tiles/tile_0.png" alt="" class="tile tile-0" />
+      <img src="./imgs/tiles/tile_1.png" alt="" class="tile tile-1" />
+      <div class="tile-cluster-0">
+        <img src="./imgs/tiles/tile_2.png" alt="" class="tile tile-2" />
+        <img src="./imgs/tiles/tile_3.png" alt="" class="tile tile-3" />
+      </div>
+      <div class="tile-cluster-1">
+        <img src="./imgs/tiles/tile_4.png" alt="" class="tile tile-4" />
+        <img src="./imgs/tiles/tile_5.png" alt="" class="tile tile-5" />
+      </div>
+      <img src="./imgs/tiles/tile_6.png" alt="" class="tile tile-6" />
+
+      <img src="./imgs/tiles/tile_7.png" alt="" class="tile tile-7" />
+      <div class="tile-cluster-2">
+        <img src="./imgs/tiles/tile_8.png" alt="" class="tile tile-8" />
+        <img src="./imgs/tiles/tile_9.png" alt="" class="tile tile-9" />
+      </div>
+      <div class="tile-cluster-3">
+        <img src="./imgs/tiles/tile_10.png" alt="" class="tile tile-10" />
+        <img src="./imgs/tiles/tile_11.png" alt="" class="tile tile-11" />
+        <img src="./imgs/tiles/tile_12.png" alt="" class="tile tile-12" />
+      </div>
+    </div>
   </main>
 
 </body>
