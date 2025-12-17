@@ -48,6 +48,10 @@
     font-display: swap;
 }
 
+:root {
+    --min-hero-height: 650px;
+}
+
 html,
 body {
     margin: 0;
@@ -167,7 +171,7 @@ main {
 }
 
 .hero-content {
-    height: 100vh;
+    height: max(100vh, var(--min-hero-height));
     width: 100%;
     position: inherit;
     z-index: 10;
@@ -223,17 +227,14 @@ main {
 
 .hero-transition {
     position: absolute;
+    top: max(90vh, calc(var(--min-hero-height) - 10vh));
     z-index: 20;
     height: 20vh;
     width: 100%;
     background: #F4F2F3;
     filter: blur(50px);
-    top: 90vh;
 }
 
-.hero-transition-spacer {
-    height: 20vh;
-}
 
 .inline-scottydog {
     display: flex;
@@ -571,11 +572,10 @@ main {
     .hero-transition {
         position: absolute;
         z-index: 20;
-        height: 50px;
         width: 100%;
         background: #F4F2F3;
         filter: blur(15px);
-        top: calc(100vh - 50px / 2);
+        top: max(calc(100vh - 50px / 2), calc(var(--min-hero-height) - 50px / 2));
     }
 
 }
