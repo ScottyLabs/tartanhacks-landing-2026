@@ -64,4 +64,8 @@
         height: 24px;
         max-width: 100px;
     }
+
+    #faqs-content {
+        grid-template-columns: 1fr;
+    }
 }

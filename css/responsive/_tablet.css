@@ -65,4 +65,8 @@
     .register-link img {
         width: 25vw;
     }
+
+    #faqs-content {
+        grid-template-columns: 1fr;
+    }
 }
