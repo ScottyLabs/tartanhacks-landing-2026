@@ -82,6 +82,14 @@
     align-items: center;
 }
 
+.inline-applovin {
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
 .hero-description {
     color: #000;
     text-align: center;
