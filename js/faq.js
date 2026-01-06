@@ -84,9 +84,9 @@ function toggleFAQ(index) {
     const iconElement = faqElement.getElementsByClassName("faq-icon")[0];
     if (answerElement.style.display === "block") {
         answerElement.style.display = "none";
-        iconElement.innerHTML = "<img src=\"./imgs/glass_+.png\" alt=\"+\" />";
+        iconElement.classList.remove("rotated");
     } else {
         answerElement.style.display = "block";
-        iconElement.innerHTML = "<img src=\"./imgs/glass_x.png\" alt=\"-\" />";
+        iconElement.classList.add("rotated");
     }
 }

@@ -49,12 +49,23 @@
 }
 
 /* make it a little bigger on hover, smoothly */
-.faq-icon:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
+.faq-icon {
+    transition: transform 0.3s ease-in-out;
 }
 
-.faq-icon img {
-    min-width: 58px;
-    min-height: 58px;
+.faq-icon:hover {
+    transform: scale(1.1);
+}
+
+.faq-icon.rotated {
+    transform: rotate(45deg);
+}
+
+.faq-icon.rotated:hover {
+    transform: rotate(45deg) scale(1.1);
+}
+
+.faq-icon>img {
+    height: 40px;
+    width: 40px;
 }

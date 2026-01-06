@@ -125,4 +125,9 @@
     #faqs-content {
         grid-template-columns: 1fr;
     }
+
+    .speaker {
+        flex-direction: column;
+        gap: 24px;
+    }
 }

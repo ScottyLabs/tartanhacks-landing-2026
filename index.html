@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/main.css" />
   <script src="./js/cursor.js"></script>
   <script src="./js/faq.js"></script>
+  <script src="./js/prizes.js"></script>
 </head>
 
 <body>
@@ -79,13 +80,34 @@
     </section>
     <hr class="section-divider" />
     <section id="speakers" class="speakers-section">
-      <h2 class="section-title">SPEAKERS</h2>
-      <p class="section-description">To be announced!</p>
+      <h2 class="section-title">SPEAKER</h2>
+      <div id="speakers-content">
+        <div class="speaker">
+          <img src="./imgs/wolfram.png" alt="Stephen Wolfram" />
+          <div class="speaker-info">
+            <h3>Stephen Wolfram</h3>
+            <p>Stephen Wolfram is the creator of Mathematica, a scientific computing platform used by thousands of
+              engineers and scientists worldwide. He is the CEO of Wolfram Research, a software and technology
+              consulting
+              company that serves industry, government, and academia. Wolfram holds a PhD in physics from the California
+              Institute of Technology and is a MacArthur Fellow. He last visited CMU over 30 years ago.</p>
+          </div>
+        </div>
+      </div>
     </section>
     <hr class="section-divider" />
     <section class="prizes-section">
-      <h2 class="section-title">Prize Tracks</h2>
-      <p class="section-description">To be announced!</p>
+      <h3 class="section-title">Prize Tracks</h3>
+      <div id="prizes-content">
+        <div class="prize-section">
+          <h3>ScottyLabs</h3>
+          <img src="./imgs/overall_prizes.png" alt="Grand Prizes" />
+          <h3>Themed Prizes</h3>
+          <!-- four expandable glassy cards with the + and x icons with themed prizes and descriptions, handled by JS -->
+          <div id="themed-prizes-content" />
+        </div>
+        <p class="section-description">More to be announced soon!</p>
+      </div>
     </section>
     <hr class="section-divider" />
     <section id="FAQs" class="faqs-section">
