@@ -31,9 +31,10 @@
 #themed-prizes-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 48px;
     width: 100%;
     margin: 1rem 0;
+
 }
 
 .themed-prize {
@@ -92,10 +93,13 @@
     color: #333;
 }
 
-.themed-prize-icon {
-    transition: transform 0.3s ease-in-out;
+.themed-prize-icon>img {
     height: 40px;
     width: 40px;
+}
+
+.themed-prize-icon {
+    transition: transform 0.3s ease-in-out;
 }
 
 .themed-prize-icon:hover {
