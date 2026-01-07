@@ -1,59 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TartanHacks 2026" />
-    <meta
-      name="keywords"
-      content="TartanHacks, CMU, Carnegie Mellon University, Hackathon, CMU Hackathon, Hackathon 2026"
-    />
-    <title>TartanHacks 2026</title>
-    <link rel="icon" href="./imgs/TH26_favicon.png" />
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
 
-      img {
-        width: 100%;
-        display: block;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TartanHacks 2026" />
+  <meta name="keywords"
+    content="TartanHacks, CMU, Carnegie Mellon University, Hackathon, CMU Hackathon, Hackathon 2026" />
+  <title>TartanHacks 2026</title>
+  <link rel="icon" href="./imgs/TH26_favicon.png" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="./js/cursor.js"></script>
+  <script src="./js/faq.js"></script>
+  <script src="./js/prizes.js"></script>
+  <script src="./js/schedule.js"></script>
+  <script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_ejDcr5o2V9mVvWWgtfYyygzSwTEGMcC8H2no77TmT7t', {
+      api_host: '/ph',
+      ui_host: 'https://us.posthog.com'
+    })
+  </script>
+</head>
 
-      .register-link {
-        position: absolute;
-        left: 50%;
-        top: 49.5vw;
-        transform: translate(-50%, -50%);
-      }
+<body>
+  <div class="cursor-effect"></div>
+  <header>
+    <a href="#" class="header-logo_link">
+      <img src="./imgs/TH26.svg" alt="TartanHacks 2026 Logo" class="header-nav-logo" />
+    </a>
+    <nav>
+      <a href="#home" class="header-nav-link">Home</a>
+      <a href="#schedule" class="header-nav-link">Schedule</a>
+      <a href="#speakers" class="header-nav-link">Speakers</a>
+      <a href="#prizes" class="header-nav-link">Prizes</a>
+      <a href="#faqs" class="header-nav-link">FAQs</a>
+      <a href="#sponsors" class="header-nav-link">Sponsors</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-title">
+          <div class="hero-title-container">
+            <img src="./imgs/title-text.png" alt="TartanHacks 2026" class="hero-title-img" />
+            <div class="hero-title-overlay glassy"></div>
+          </div>
+          <p class="hero-subtitle">Presented by ScottyLabs <img src="./imgs/scottylabs-logo.png" alt="ScottyLabs Logo"
+              class="inline-scottydog" /> & <img src="./imgs/sponsors/applovin.svg" alt="AppLovin Logo"
+              class="inline-applovin" />
+          </p>
+        </div>
+        <a href="https://register.tartanhacks.com" class="register-link">
+          <img src="./imgs/register-button.png" alt="Register Now" class="register-button" />
+        </a>
+        <div class="hero-transition"></div>
+      </div>
+      <div class="hero-transition-spacer"></div>
+      <div class="hero-description">
+        <p class="hero-description-text">
+          TARTANHACKS is the largest Hackathon in Pittsburgh! Organized by ScottyLabs, it's a 24-hour hackathon where
+          participants from all over the country create innovative projects. Come on over to hack, learn from our
+          workshops and incredible speakers, and meet other hackers.
+        </p>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section class="theme-section">
+      <div class="theme-head">
+        <h2 class="theme-intro">This year's theme is...</h2>
+        <p class="section-title">
+          MOSAIC
+        </p>
+      </div>
+      <div class="theme-description">
+        <p>For 24 hours, step into a world built from fragments,<br>floating tiles, ideas that refract and snap into
+          place.</p>
+        <p>Nothing arrives whole; everything begins as a piece. You and your team gather scattered bits of vision,
+          skill, and code, assembling them into something greater than any single part. Every insight becomes a tile and
+          every teammate a new color. As the hours pass, the picture will sharpen, a Mosaic taking shape.</p>
+        <p class="theme-tagline"><strong>Enter with fragments.<br>Leave with something whole.</strong></p>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="schedule" class="schedule-section">
+      <h2 class="section-title">SCHEDULE</h2>
+      <div id="schedule-content">
+        <div class="schedule-day-wrapper">
+          <img src="./imgs/friday.png" alt="Schedule Day" />
+          <div id="schedule-friday" class="schedule-day"></div>
+          <img src="./imgs/saturday.png" alt="Schedule Day" />
+          <div id="schedule-saturday" class="schedule-day"></div>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="speakers" class="speakers-section">
+      <h2 class="section-title">SPEAKER</h2>
+      <div id="speakers-content">
+        <div class="speaker">
+          <img src="./imgs/wolfram.png" alt="Stephen Wolfram" />
+          <div class="speaker-info">
+            <h3>Stephen Wolfram</h3>
+            <p>Stephen Wolfram is the creator of Mathematica, a scientific computing platform used by thousands of
+              engineers and scientists worldwide. He is the CEO of Wolfram Research, a software and technology
+              consulting
+              company that serves industry, government, and academia. Wolfram holds a PhD in physics from the California
+              Institute of Technology and is a MacArthur Fellow. He last visited CMU over 30 years ago.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="prizes" class="prizes-section">
+      <h3 class="section-title">Prize Tracks</h3>
+      <div id="prizes-content">
+        <div class="prize-section">
+          <h3>ScottyLabs</h3>
+          <img src="./imgs/overall_prizes.png" alt="Grand Prizes" />
+          <p></p>
+          <h3>Themed Prizes</h3>
+          <!-- four expandable glassy cards with the + and x icons with themed prizes and descriptions, handled by JS -->
+          <div id="themed-prizes-content" />
+        </div>
+        <p class="section-description">More to be announced soon!</p>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="FAQs" class="faqs-section">
+      <h2 class="section-title">FAQs</h2>
+      <div id="faqs-content"></div>
+    </section>
+    <hr class="section-divider" />
+    <section id="sponsors" class="sponsors-section">
+      <h2 class="section-title">SPONSORS</h2>
+      <div class="sponsors-list">
+        <div class="sponsors-title">
+          <div class="title-badge">Title</div>
+          <div class="title-logos">
+            <a href="https://applovin.com/" target="_blank"><img src="./imgs/sponsors/applovin.svg" alt="AppLovin"></a>
+          </div>
+        </div>
+        <div class="sponsors-premier">
+          <div class="premier-badge">Premier</div>
+          <div class="premier-logos">
+            <a href="https://coderabbit.ai/" target="_blank"><img src="./imgs/sponsors/coderabbit.png"
+                alt="CodeRabbit"></a>
+            <a href="https://www.visa.com/" target="_blank"><img src="./imgs/sponsors/visa.png" alt="Visa"></a>
+            <a href="https://ripple.com/" target="_blank"><img src="./imgs/sponsors/ripple.png" alt="Ripple"></a>
+            <a href="https://www.conway.ai/" target="_blank"><img src="./imgs/sponsors/conway.png" alt="Conway"></a>
+            <a href="https://www.dedaluslabs.ai/" target="_blank"><img src="./imgs/sponsors/dedalus.png"
+                alt="Dedalus Labs"></a>
+          </div>
+        </div>
 
-      .register-link:hover {
-        cursor: pointer;
-      }
+        <div class="sponsors-grid">
+          <a href="https://www.accenture.com/" target="_blank"><img src="./imgs/sponsors/accenture.png"
+              alt="Accenture"></a>
+          <a href="https://www.agentuity.com/" target="_blank"><img src="./imgs/sponsors/agentuity.png"
+              alt="Agentuity"></a>
+          <a href="https://www.citadel.com/" target="_blank"><img src="./imgs/sponsors/citadel.png" alt="Citadel"></a>
+          <a href="https://www.deshaw.com/" target="_blank"><img src="./imgs/sponsors/deshaw.png"
+              alt="DE Shaw & Co"></a>
+          <a href="https://fly.io/" target="_blank"><img src="./imgs/sponsors/flyio.png" alt="Fly.io"></a>
+          <a href="https://www.hudsonrivertrading.com/" target="_blank"><img src="./imgs/sponsors/hrt.png"
+              alt="HRT"></a>
 
-      .register-link img {
-        width: 15vw;
-        height: auto;
-      }
-    </style>
-  </head>
+          <a href="https://modal.com/" target="_blank"><img src="./imgs/sponsors/modal.png" alt="Modal"></a>
+          <a href="https://www.optiver.com/" target="_blank"><img src="./imgs/sponsors/optiver.png" alt="Optiver"></a>
+          <a href="https://scale.com/" target="_blank"><img src="./imgs/sponsors/scale.png" alt="Scale"></a>
+          <a href="https://www.sandia.gov/" target="_blank"><img src="./imgs/sponsors/sandia.png"
+              alt="Sandia National Laboratories"></a>
+          <a href="https://decagon.ai/" target="_blank"><img src="./imgs/sponsors/decagon.png" alt="Decagon"></a>
+          <a href="https://www.imc.com/" target="_blank"><img src="./imgs/sponsors/imc.png" alt="IMC"></a>
+          <a href="https://www.bamfunds.com/" target="_blank"><img src="./imgs/sponsors/baly.png" alt="Balyasny"></a>
 
-  <body>
-    <main>
-      <img
-        src="./imgs/TH26 Landing Page.png"
-        alt="ScottyLabs Nova Landing Page"
-      />
-      <a
-        href="https://register.tartanhacks.com"
-        class="register-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="./imgs/Register Button.png" alt="Register" />
-      </a>
-    </main>
-  </body>
+          <a href="https://www.janestreet.com/" target="_blank"><img src="./imgs/sponsors/jane.png"
+              alt="Jane Street"></a>
+        </div>
+      </div>
+    </section>
+    <!-- Decorative tiles -->
+    <div class="tiles-container" aria-hidden="true">
+      <img src="./imgs/tiles/tile_0.png" alt="" class="tile tile-0" />
+      <img src="./imgs/tiles/tile_1.png" alt="" class="tile tile-1" />
+      <div class="tile-cluster-0">
+        <img src="./imgs/tiles/tile_2.png" alt="" class="tile tile-2" />
+        <img src="./imgs/tiles/tile_3.png" alt="" class="tile tile-3" />
+      </div>
+      <div class="tile-cluster-1">
+        <img src="./imgs/tiles/tile_4.png" alt="" class="tile tile-4" />
+        <img src="./imgs/tiles/tile_5.png" alt="" class="tile tile-5" />
+      </div>
+      <img src="./imgs/tiles/tile_6.png" alt="" class="tile tile-6" />
+
+      <img src="./imgs/tiles/tile_7.png" alt="" class="tile tile-7" />
+      <div class="tile-cluster-2">
+        <img src="./imgs/tiles/tile_8.png" alt="" class="tile tile-8" />
+        <img src="./imgs/tiles/tile_9.png" alt="" class="tile tile-9" />
+      </div>
+      <div class="tile-cluster-3">
+        <img src="./imgs/tiles/tile_10.png" alt="" class="tile tile-10" />
+        <img src="./imgs/tiles/tile_11.png" alt="" class="tile tile-11" />
+        <img src="./imgs/tiles/tile_12.png" alt="" class="tile tile-12" />
+      </div>
+    </div>
+  </main>
+
+</body>
+
 </html>
