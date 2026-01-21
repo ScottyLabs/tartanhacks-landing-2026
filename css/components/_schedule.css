@@ -59,7 +59,8 @@
     font-size: 16px;
     font-weight: 400;
     color: #000;
-    white-space: nowrap;
+    white-space: normal;
+    text-align: center;
 }
 
 /* Events Container */
@@ -104,6 +105,11 @@
 }
 
 .schedule-event-featured-saturday {
+    background: linear-gradient(92deg, #9DCFF2 -1.47%, #FBD8BF 56.45%, #D6F6E9 111.98%);
+    border: none;
+}
+
+.schedule-event-featured-weekBefore {
     background: linear-gradient(92deg, #9DCFF2 -1.47%, #FBD8BF 56.45%, #D6F6E9 111.98%);
     border: none;
 }
