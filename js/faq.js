@@ -7,7 +7,7 @@ const faqs = [
     },
     {
         question: "How much does it cost to participate in TartanHacks?",
-        answer: "Participating in TartanHacks is completely free for all undergraduate students! All merch and workshops are provided at no cost for participants."
+        answer: "Participating in TartanHacks is completely free for all undergrad + grad students! All merch and workshops are provided at no cost for participants."
     },
     {
         question: "Will TartanHacks provide travel reimbursements?",
@@ -15,11 +15,11 @@ const faqs = [
     },
     {
         question: "I'm not a Computer Science/Technical major, can I still join?",
-        answer: "Yes! All undergraduate majors and programs, even if they aren't technical, are welcome and encouraged to participate in TartanHacks. We will provide access to hacker guides and slides from a series of web development workshops online that you can use to brush up your skills! We will also offer workshops during the event so you can get started with new frameworks."
+        answer: "Yes! All undergraduate + graduate majors and programs, even if they aren't technical, are welcome and encouraged to participate in TartanHacks. We will provide access to hacker guides and slides from a series of web development workshops online that you can use to brush up your skills! We will also offer workshops during the event so you can get started with new frameworks."
     },
     {
         question: "Is TartanHacks open to first-year students?",
-        answer: "Yes! Students of all skill levels are welcome to participate as long as they are an undergraduate. First-year students and first-time hackers have always been a part of TartanHacks so we would love to see you at the event! We also award specific prizes for beginner hackers."
+        answer: "Yes! Students of all skill levels are welcome to participate as long as they are a student. First-year students and first-time hackers have always been a part of TartanHacks so we would love to see you at the event! We also award specific prizes for beginner hackers."
     },
     {
         question: "Is housing provided for non-CMU hackers?",
