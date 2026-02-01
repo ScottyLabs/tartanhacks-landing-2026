@@ -7,8 +7,8 @@ const schedule = {
         "Monday 5:30-6:30pm": [
             { name: "Agentuity", location: "" }
         ],
-        "Tuesday 6:00-7:00pm": [
-            { name: "CodeRabbit", location: "" }
+        "Tuesday 7:00-8:00pm": [
+            { name: "CodeRabbit Talk", location: "" }
         ],
         "Wednesday 5:00-6:00pm": [
             { name: "AppLovin Talk", location: "" }
