@@ -8,13 +8,13 @@ const schedule = {
             { name: "Agentuity", location: "" }
         ],
         "Tuesday 6:00-7:00pm": [
-            { name: "Modal", location: "" }
+            { name: "CodeRabbit", location: "" }
         ],
         "Wednesday 5:00-6:00pm": [
-            { name: "AppLovin", location: "" }
+            { name: "AppLovin Talk", location: "" }
         ],
         "Thursday 5:30-6:30 PM": [
-            { name: "IMC Trading", location: "" }
+            { name: "IMC Talk", location: "" }
         ]
     },
     friday: {
@@ -27,22 +27,28 @@ const schedule = {
             { name: "Opening Ceremony", location: "McConomy Auditorium", details: "Overflow: TBD" }
         ],
         "5:00 PM": [
-            { name: "HACKING STARTS", location: "Weigand Gym", featured: true }
+            { name: "HACKING STARTS", location: "Wiegand Gym", featured: true }
+        ],
+        "5:00-6:00 PM": [
+            { name: "Roboclub Workshop", location: "PMW" }
         ],
         "5:30-6:30 PM": [
-            { name: "Ripple Talk", location: "" }
+            { name: "Ripple Talk", location: "Connan" }
         ],
         "6:30-7:30 PM": [
-            { name: "Wolfram Key Note", location: "" }
+            { name: "Wolfram Key Note", location: "Danforth" }
         ],
         "7:00-8:00 PM": [
             { name: "Telora Talk", location: "PMW" }
         ],
         "7:30-8:30 PM": [
-            { name: "Dinner", location: "Weigand Gym" }
+            { name: "Dinner", location: "Wiegand Gym" }
         ],
         "8:00-9:00 PM": [
             { name: "Dedalus Talk", location: "" }
+        ],
+        "8:30-9:30 PM": [
+            { name: "Modal Talk", location: "" }
         ],
         "9:30-10:30 PM": [
             { name: "Conway Talk", location: "" }
@@ -50,37 +56,37 @@ const schedule = {
     },
     saturday: {
         "12:00 AM": [
-            { name: "Midnight Snack", location: "", details: "Make sure unlocked at midnight" }
+            { name: "Midnight Snack", location: "" }
         ],
         "12:30-1:30 AM": [
             { name: "Karaoke", location: "" }
         ],
         "9:00-11:00 AM": [
-            { name: "Breakfast", location: "Weigand Gym" }
+            { name: "Breakfast", location: "Wiegand Gym" }
         ],
         "11:00-12:00 PM": [
             { name: "AppLovin Resume Workshop", location: "" }
         ],
-        "12:30-1:30 PM": [
+        "12:30-1:30PM": [
             { name: "Visa Talk", location: "" }
         ],
         "1:30-2:30 PM": [
-            { name: "Lunch", location: "Weigand Gym" }
+            { name: "Lunch", location: "Wiegand Gym" }
         ],
         "5:00 PM": [
             { name: "SUBMISSION DEADLINE", location: "", featured: true }
         ],
-        "5:30-8:00 PM": [
-            { name: "Judging Expo", location: "Weigand Gym" }
+        "5:30 - 8:00 PM": [
+            { name: "Judging Expo", location: "Wiegand Gym", details: "Manual Discord Announcement (not scheduled)" }
         ],
         "8:00-9:00 PM": [
-            { name: "Dinner", location: "Weigand Gym" }
+            { name: "Dinner", location: "Wiegand Gym" }
         ],
         "8:30-9:00 PM": [
             { name: "Merch Distribution + Boba", location: "Connan Room" }
         ],
         "9:00-10:00 PM": [
-            { name: "Closing Ceremony", location: "McConomy Auditorium", featured: true }
+            { name: "Closing Ceremony", location: "McConomy Auditorium", featured: true, details: "Manual Discord Announcement (not scheduled)" }
         ]
     }
 };
