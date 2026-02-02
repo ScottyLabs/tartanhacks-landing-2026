@@ -131,6 +131,23 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.partner-badge {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-family: "Spline Sans", sans-serif;
+    font-size: 16px;
+    color: #3D2C35;
+    font-weight: 500;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 .title-logos {
     display: flex;
     justify-content: space-around;
