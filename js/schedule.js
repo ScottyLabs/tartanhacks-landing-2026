@@ -5,16 +5,16 @@
 const schedule = {
     weekBefore: {
         "Monday 5:30-6:30pm": [
-            { name: "Agentuity", location: "" }
+            { name: "Agentuity", location: "TEP 2700" }
         ],
         "Tuesday 7:00-8:00pm": [
-            { name: "CodeRabbit Talk", location: "" }
+            { name: "CodeRabbit Talk", location: "DH 1212" }
         ],
         "Wednesday 5:00-6:00pm": [
-            { name: "AppLovin Talk", location: "" }
+            { name: "AppLovin Talk", location: "GHC 4307" }
         ],
         "Thursday 5:30-6:30 PM": [
-            { name: "IMC Talk", location: "" }
+            { name: "IMC Talk", location: "DH 1212" }
         ]
     },
     friday: {
