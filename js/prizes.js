@@ -24,6 +24,10 @@ const themedPrizes = [
     {
         name: "Emerald Tile",
         description: "Most significant innovation in sustainability"
+    },
+    {
+        name: "Spiciest Meme",
+        description: "Submit memes in the discord channel -- can be hackathon related, or not!"
     }
 ];
 

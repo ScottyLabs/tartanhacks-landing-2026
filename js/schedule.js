@@ -19,9 +19,9 @@ const schedule = {
     },
     friday: {
         "3:00-4:00 PM": [
-            { name: "Check-In", location: "Connan Room", details: "Provide participant guides, stickers, wifi access code" },
-            { name: "Sponsorship Expo", location: "" },
-            { name: "Team Formation", location: "" }
+            { name: "Check-In", location: "Connan", details: "Provide participant guides, stickers, wifi access code" },
+            { name: "Sponsorship Expo", location: "Connan" },
+            { name: "Team Formation", location: "Kirr Commons (Black Chairs)" }
         ],
         "4:00-5:00 PM": [
             { name: "Opening Ceremony", location: "McConomy Auditorium", details: "Overflow: TBD" }
@@ -36,7 +36,7 @@ const schedule = {
             { name: "Ripple Talk", location: "Connan" }
         ],
         "6:30-7:30 PM": [
-            { name: "Wolfram Key Note", location: "Danforth" }
+            { name: "Wolfram Key Note", location: "Danforth Conference Room" }
         ],
         "7:00-8:00 PM": [
             { name: "Telora Talk", location: "PMW" }
@@ -45,30 +45,30 @@ const schedule = {
             { name: "Dinner", location: "Wiegand Gym" }
         ],
         "8:00-9:00 PM": [
-            { name: "Dedalus Talk", location: "" }
+            { name: "Dedalus Talk", location: "Danforth Conference Room" }
         ],
         "8:30-9:30 PM": [
-            { name: "Modal Talk", location: "" }
+            { name: "Modal Talk", location: "Connan" }
         ],
         "9:30-10:30 PM": [
-            { name: "Conway Talk", location: "" }
+            { name: "Conway Talk", location: "Danforth Conference Room" }
         ]
     },
     saturday: {
         "12:00 AM": [
-            { name: "Midnight Snack", location: "" }
+            { name: "Midnight Snack + Poker", location: "Connan" }
         ],
         "12:30-1:30 AM": [
-            { name: "Karaoke", location: "" }
+            { name: "Karaoke", location: "Connan" }
         ],
         "9:00-11:00 AM": [
             { name: "Breakfast", location: "Wiegand Gym" }
         ],
         "11:00-12:00 PM": [
-            { name: "AppLovin Resume Workshop", location: "" }
+            { name: "AppLovin Resume Workshop", location: "PMW" }
         ],
         "12:30-1:30PM": [
-            { name: "Visa Talk", location: "" }
+            { name: "Visa Talk", location: "Danforth Conference Room" }
         ],
         "1:30-2:30 PM": [
             { name: "Lunch", location: "Wiegand Gym" }
