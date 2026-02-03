@@ -180,7 +180,3 @@
 .sponsors-title a:hover {
     transform: scale(1.1);
 }
-
-.sponsor-logo-inverted {
-    filter: invert(1);
-}
