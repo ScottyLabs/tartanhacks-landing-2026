@@ -1,4 +1,4 @@
-// Injects themed prizes into the page, following the pattern from faq.js
+// Injects themed and sponsor prizes into the page, following the pattern from faq.js
 
 const themedPrizes = [
     {
@@ -19,33 +19,76 @@ const themedPrizes = [
     },
     {
         name: "Shattered Glass",
-        description: "Most significant technological innovation that disrupts the status quo"
+        description: "Most significant technological innovation that disrupts the status quo."
     },
     {
         name: "Emerald Tile",
-        description: "Most significant innovation in sustainability"
+        description: "Most significant innovation in sustainability."
     },
     {
-        name: "Spiciest Meme",
-        description: "Submit memes in the discord channel -- can be hackathon related, or not!"
+        name: "First Penguin",
+        description: "Awarded to the team that took the biggest gamble while not meeting its goals… a prize for ‘glorious failure’."
     }
 ];
 
-function initThemedPrizes() {
-    const rootElement = document.getElementById("themed-prizes-content");
+const sponsorPrizes = [
+    {
+        name: "AppLovin",
+        description: "Build a fully playable, self-contained mobile browser game with a total bundle size under 15 KB.<br><br><strong>Prizes:</strong> 1st: $4000, 2nd: $3000, 3rd: $2000, Bonus: $500-$1000"
+    },
+    {
+        name: "BNY",
+        description: "TBD<br><br><strong>Prize:</strong> $2000"
+    },
+    {
+        name: "Capital One",
+        description: "Best financial hack<br><br><strong>Prize:</strong> $2000"
+    },
+    {
+        name: "Conway",
+        description: "Best AI for decision support<br><br><strong>Prizes:</strong> 1st: $1000, 2nd: $650, 3rd: $350"
+    },
+    {
+        name: "CodeRabbit",
+        description: "Best use of CodeRabbit<br><br><strong>Prize:</strong> TBD"
+    },
+    {
+        name: "Dedalus Labs",
+        description: "Best use of dedaluslabs.ai MCP hosting<br><br><strong>Prizes:</strong> 1st: $1000, 2nd: $650, 3rd: $350"
+    },
+    {
+        name: "Ripple",
+        description: "Build an MVP that leverages the XRP Ledger's core features to solve a real-world problem.<br><br><strong>Prizes:</strong> 1st: $1000, 2nd: $500, 3rd: $250, Dev Feedback: $250"
+    },
+    {
+        name: "Roboclub",
+        description: "Best hardware hack<br><br><strong>Prize:</strong> Small Robotics Grant"
+    },
+    {
+        name: "Visa",
+        description: "Intelligent Budget Planner: Design a smart financial planning tool that helps users manage spending across categories including subscriptions, recurring expenses, and day‑to‑day purchases, while surfacing personalized insights and simple, actionable guidance.<br><br><strong>Prize:</strong> $2000 total"
+    }
+];
+
+function renderPrizeList(prizes, containerId, prefix) {
+    const rootElement = document.getElementById(containerId);
     if (!rootElement) return;
 
-    for (let i = 0; i < themedPrizes.length; i++) {
-        const prize = themedPrizes[i];
+    rootElement.innerHTML = ''; // Clear existing
+
+    for (let i = 0; i < prizes.length; i++) {
+        const prize = prizes[i];
         const prizeElement = document.createElement("div");
         prizeElement.classList.add("themed-prize");
         prizeElement.innerHTML = `
-            <div class="themed-prize-card">
+            <div class="themed-prize-card" onclick="togglePrize('${prefix}', ${i})">
                 <div class="themed-prize-header">
                     <h4>${prize.name}</h4>
-                    <button class="themed-prize-icon" onclick="togglePrize(${i})"><img src="./imgs/clear_+.png" alt="+" /></button>
+                    <button class="themed-prize-icon" id="${prefix}-icon-${i}">
+                        <img src="./imgs/clear_+.png" alt="+" />
+                    </button>
                 </div>
-                <div class="themed-prize-description">
+                <div class="themed-prize-description" id="${prefix}-desc-${i}">
                     <p>${prize.description}</p>
                 </div>
             </div>`;
@@ -53,10 +96,15 @@ function initThemedPrizes() {
     }
 }
 
-function togglePrize(index) {
-    const prizeElement = document.getElementsByClassName("themed-prize")[index];
-    const descriptionElement = prizeElement.getElementsByClassName("themed-prize-description")[0];
-    const iconElement = prizeElement.getElementsByClassName("themed-prize-icon")[0];
+function initPrizes() {
+    renderPrizeList(themedPrizes, "themed-prizes-content", "themed");
+    renderPrizeList(sponsorPrizes, "sponsor-prizes-content", "sponsor");
+}
+
+function togglePrize(prefix, index) {
+    const descriptionElement = document.getElementById(`${prefix}-desc-${index}`);
+    const iconElement = document.getElementById(`${prefix}-icon-${index}`);
+
     if (descriptionElement.style.display === "block") {
         descriptionElement.style.display = "none";
         iconElement.classList.remove("rotated");
@@ -68,7 +116,7 @@ function togglePrize(index) {
 
 // Initialize on page load
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initThemedPrizes);
+    document.addEventListener('DOMContentLoaded', initPrizes);
 } else {
-    initThemedPrizes();
+    initPrizes();
 }
