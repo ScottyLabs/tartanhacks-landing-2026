@@ -52,12 +52,12 @@ const schedule = {
         ],
         "9:30-10:30 PM": [
             { name: "Conway Talk", location: "Danforth Conference Room" }
+        ],
+        "11:30 PM": [
+            { name: "Midnight Snack + Poker", location: "Connan" }
         ]
     },
     saturday: {
-        "12:00 AM": [
-            { name: "Midnight Snack + Poker", location: "Connan" }
-        ],
         "12:30-1:30 AM": [
             { name: "Karaoke", location: "Connan" }
         ],
