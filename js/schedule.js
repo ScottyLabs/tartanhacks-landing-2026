@@ -19,7 +19,7 @@ const schedule = {
     },
     friday: {
         "3:00-4:00 PM": [
-            { name: "Check-In", location: "Connan", details: "Provide participant guides, stickers, wifi access code" },
+            { name: "Check-In", location: "Connan" },
             { name: "Sponsorship Expo", location: "Connan" },
             { name: "Team Formation", location: "Kirr Commons (Black Chairs)" }
         ],
@@ -34,9 +34,6 @@ const schedule = {
         ],
         "5:30-6:30 PM": [
             { name: "Ripple Talk", location: "Connan" }
-        ],
-        "6:30-7:30 PM": [
-            { name: "Wolfram Key Note", location: "Danforth Conference Room" }
         ],
         "7:00-8:00 PM": [
             { name: "Telora Talk", location: "PMW" }
@@ -53,16 +50,22 @@ const schedule = {
         "9:30-10:30 PM": [
             { name: "Conway Talk", location: "Danforth Conference Room" }
         ],
-        "11:30 PM": [
-            { name: "Midnight Snack + Poker", location: "Connan" }
+        "10:30 PM - 12:30 AM": [
+            { name: "Poker", location: "Connan" }
         ]
     },
     saturday: {
+        "12:00 AM": [
+            { name: "Midnight Snack", location: "Connan" }
+        ],
         "12:30-1:30 AM": [
             { name: "Karaoke", location: "Connan" }
         ],
         "9:00-11:00 AM": [
             { name: "Breakfast", location: "Wiegand Gym" }
+        ],
+        "10:30-11:00 AM": [
+            { name: "Transfyr Talk", location: "Connan" }
         ],
         "11:00-12:00 PM": [
             { name: "AppLovin Resume Workshop", location: "PMW" }
@@ -77,7 +80,7 @@ const schedule = {
             { name: "SUBMISSION DEADLINE", location: "", featured: true }
         ],
         "5:30 - 8:00 PM": [
-            { name: "Judging Expo", location: "Wiegand Gym", details: "Manual Discord Announcement (not scheduled)" }
+            { name: "Judging Expo", location: "Wiegand Gym" }
         ],
         "8:00-9:00 PM": [
             { name: "Dinner", location: "Wiegand Gym" }
@@ -86,7 +89,7 @@ const schedule = {
             { name: "Merch Distribution + Boba", location: "Connan Room" }
         ],
         "9:00-10:00 PM": [
-            { name: "Closing Ceremony", location: "McConomy Auditorium", featured: true, details: "Manual Discord Announcement (not scheduled)" }
+            { name: "Closing Ceremony", location: "McConomy Auditorium", featured: true }
         ]
     }
 };
@@ -129,6 +132,7 @@ function renderScheduleDay(dayData, containerId, dayName) {
             eventCard.innerHTML = `
                 <div class="schedule-event-name">${event.name}</div>
                 <div class="schedule-event-location">${event.location}</div>
+                ${event.details ? `<div class="schedule-event-details">${event.details}</div>` : ''}
             `;
             eventsContainer.appendChild(eventCard);
         }
