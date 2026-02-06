@@ -83,7 +83,7 @@ const schedule = {
             { name: "Judging Expo", location: "Wiegand Gym" }
         ],
         "8:00-9:00 PM": [
-            { name: "Dinner", location: "Wiegand Gym" }
+            { name: "Dinner", location: "Danforth Conference Room" }
         ],
         "8:30-9:00 PM": [
             { name: "Merch Distribution + Boba", location: "Connan Room" }
