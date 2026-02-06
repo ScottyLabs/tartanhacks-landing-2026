@@ -54,7 +54,7 @@ const sponsorPrizes = [
     },
     {
         name: "Dedalus: Best use of Dedalus API",
-        description: "Awarded for the most innovative use of multi-modality in the Dedalus SDK (combining text, images, audio, and more).<br><br><strong>Prize:</strong> $500 + $250 API credits for winners<br><br><strong>Bonus:</strong> $100 API credits to all TartanHacks participants on our site!"
+        description: "Awarded for the most innovative use of model handoffs in the Dedalus SDK (using multiple models in the same agent)<br><br><strong>Prize:</strong> $500 + $250 API credits for winners<br><br><strong>Bonus:</strong> $100 API credits to all TartanHacks participants on our site!"
     },
     {
         name: "Dedalus: Best use of tool calling",
