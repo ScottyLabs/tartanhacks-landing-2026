@@ -118,6 +118,28 @@
     cursor: pointer;
 }
 
-.register-link img {
+.register-link .register-button, .register-link button {
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "PPRader", sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.register-link button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.register-link button:active {
+    transform: translateY(0);
+}
+
+.register-link button-secondary {
     width: 15vw;
 }
