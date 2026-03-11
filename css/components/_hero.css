@@ -121,3 +121,50 @@
 .register-link img {
     width: 15vw;
 }
+
+/* Pre-register button (HTML) */
+.pre-register-btn {
+    background: linear-gradient(135deg, #6B46C1 0%, #805AD5 100%);
+    color: white;
+    font-family: "PPRader", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(107, 70, 193, 0.3);
+    margin-top: 1rem;
+}
+
+.pre-register-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(107, 70, 193, 0.4);
+}
+
+/* Thank you banner */
+.thank-you-banner {
+    background: linear-gradient(135deg, #48BB78 0%, #38A169 100%);
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-family: "Spline Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.thank-you-banner p {
+    margin: 0;
+}
+
+/* Hero link */
+.hero-link {
+    color: #6B46C1;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.hero-link:hover {
+    color: #805AD5;
+}
