@@ -84,10 +84,10 @@
 
 .inline-applovin {
     display: flex;
-    height: 32px;
+    height: 24px;
     justify-content: center;
-    align-items: center;
-    width: fit-content;
+    /*align-items: center;*/
+    /*width: fit-content;*/
 }
 
 .hero-description {
